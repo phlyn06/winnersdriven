@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Exclusive Training | Winners Driven Team</title>
+<meta name="description" content="Free exclusive training albums from the Winners Driven Team: Santé company, products, system, success stories, doctor talks and step-by-step guides.">
+<link rel="icon" href="https://winnersdriven.com/wp-content/uploads/2025/05/cropped-s-sante-logo.jpg?w=64">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Nunito+Sans:wght@400;600;700&display=swap">
+<style>
+:root{
+  color-scheme:light dark;
+  --bg:#f5f8ee;--surface:#fff;--line:#d6e2c3;--text:#16301c;--muted:#4e6552;
+  --green:#2e7d32;--green-d:#1b5e20;--on:#fff;--lime:#a6d35f;
+  --head:"Fraunces",Georgia,serif;--body:"Nunito Sans","Segoe UI",system-ui,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c1a10;--surface:#12241a;--line:#23402d;--text:#e8f1df;--muted:#9db5a1;--green:#6abf69;--green-d:#4caf50;--on:#0c1a10}}
+:root[data-theme="dark"]{--bg:#0c1a10;--surface:#12241a;--line:#23402d;--text:#e8f1df;--muted:#9db5a1;--green:#6abf69;--green-d:#4caf50;--on:#0c1a10}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 110px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1.02rem/1.6 var(--body)}
+a{color:inherit}
+img{max-width:100%;height:auto;display:block}
+:focus-visible{outline:3px solid var(--lime);outline-offset:2px;border-radius:6px}
+.wrap{width:min(960px,100% - 2rem);margin-inline:auto}
+
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:#14532d;color:#fff}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:#14532d;z-index:30}
+.bar{display:flex;align-items:center;gap:1rem;padding:.7rem 0}
+.brand{font:800 1.05rem var(--head);white-space:nowrap;text-decoration:none}
+.links{display:flex;gap:.4rem;overflow-x:auto;scrollbar-width:none;flex:1}
+.links::-webkit-scrollbar{display:none}
+.links a{white-space:nowrap;text-decoration:none;font-size:.88rem;font-weight:600;padding:.35rem .8rem;border-radius:99px;background:rgba(255,255,255,.12)}
+.links a:hover{background:rgba(255,255,255,.25)}
+@media(max-width:640px){.bar{flex-direction:column;align-items:stretch;gap:.4rem}.brand{text-align:center}}
+
+.hero{position:relative;color:#14532d;padding:3.5rem 0;min-height:460px;display:flex;align-items:center;background:linear-gradient(rgba(245,248,238,.78),rgba(245,248,238,.78)),url('logo2.png') center 50%/auto 92% no-repeat,linear-gradient(150deg,#f5f8ee,#e1efc9 70%,#cfe6a8)}
+.hero>.wrap{width:min(960px,100% - 2rem)}
+.hero h1{font:800 clamp(2rem,6vw,3.1rem)/1.1 var(--head);margin:0 0 .9rem;letter-spacing:-.02em;color:#14532d;max-width:18ch}
+.hero p{margin:0 0 1.6rem;max-width:44ch;color:#2c4a33;font-weight:600}
+.hero .btn.lime{background:#1b5e20;color:#fff}
+.hero .btn.lime:hover{background:#14532d}
+@media(min-width:800px){.hero{min-height:500px;background:url('logo2.png') right 5% center/auto 90% no-repeat,linear-gradient(150deg,#f5f8ee,#e1efc9 70%,#cfe6a8)}.hero-text{max-width:52%}}
+
+.btn{display:inline-block;font:700 1rem var(--body);background:var(--green);color:var(--on);border:0;border-radius:10px;padding:.7rem 1.3rem;cursor:pointer;text-decoration:none;transition:background .2s,transform .15s}
+.btn:hover{background:var(--green-d)}
+.btn:active{transform:scale(.97)}
+.btn.lime{background:var(--lime);color:#14391a}
+.btn.lime:hover{background:#b9e07a}
+.btn.alt{background:transparent;color:var(--green);border:1.5px solid var(--green)}
+.btn.alt:hover{background:var(--green);color:var(--on)}
+
+main{padding:2rem 0 1rem}
+.album{background:var(--surface);border:1px solid var(--line);border-radius:16px;margin-bottom:1.3rem;overflow:hidden;box-shadow:0 8px 28px rgba(20,83,45,.1);transition:transform .25s,box-shadow .25s}
+.album:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(20,83,45,.18)}
+.cover{position:relative;overflow:hidden;min-height:170px;padding:1.6rem 1.4rem;display:flex;align-items:center;gap:1.1rem;color:#fff;background:linear-gradient(135deg,var(--c1),var(--c2))}
+.cover::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,rgba(255,255,255,.07) 0 2px,transparent 2px 22px)}
+.cover .big{position:absolute;right:-14px;top:50%;transform:translateY(-50%);width:190px;height:190px;opacity:.14}
+.badge{position:relative;flex:none;width:68px;height:68px;border-radius:20px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.38);display:grid;place-items:center}
+.cover .txt{position:relative}
+.cover h2{font:800 clamp(1.5rem,5vw,2.2rem)/1.1 var(--head);margin:.35rem 0 0;text-shadow:0 2px 14px rgba(0,0,0,.3);max-width:20ch}
+.tag{display:inline-block;background:rgba(0,0,0,.28);color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:99px;padding:.12rem .8rem;font-size:.8rem;font-weight:700}
+.ic{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.badge .ic{width:34px;height:34px;color:#fff}
+.cover .big{color:#fff;stroke-width:1.1}
+.btn .ic{width:18px;height:18px;vertical-align:-4px;margin-left:.4rem;transition:transform .2s}
+.btn[aria-expanded="true"] .ic{transform:rotate(180deg)}
+.links a .ic{width:14px;height:14px;vertical-align:-2px;margin-right:.35rem}
+.btn.i .ic{margin:0 .45rem 0 0}
+.head{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.2rem 1.4rem;flex-wrap:wrap}
+.head p{margin:0;color:var(--muted);font-size:.95rem;max-width:52ch}
+.panel{border-top:1px solid var(--line);padding:1.2rem 1.4rem 1.4rem}
+.panel[hidden]{display:none}
+
+/* video tiles */
+.tiles{display:grid;gap:16px}
+@media(min-width:700px){.tiles{grid-template-columns:1fr 1fr}}
+.tile{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--bg);display:flex;flex-direction:column}
+.shot{position:relative;aspect-ratio:16/9;background:#0b1d12;width:100%;border:0;padding:0;cursor:pointer;display:block}
+.shot img{width:100%;height:100%;object-fit:cover}
+.shot .play{position:absolute;inset:0;margin:auto;width:56px;height:56px;border-radius:50%;background:rgba(30,100,40,.92);color:#fff;display:grid;place-items:center;box-shadow:0 4px 14px rgba(0,0,0,.4);transition:transform .15s,background .15s}
+.shot .play .ic{width:26px;height:26px;fill:currentColor;stroke:none;margin-left:3px}
+.shot:hover .play{background:var(--green-d);transform:scale(1.08)}
+.tile iframe{width:100%;aspect-ratio:16/9;border:0;display:block;background:#000}
+.meta{padding:.7rem .9rem .9rem;display:flex;flex-direction:column;gap:.5rem;flex:1}
+.meta b{font-weight:700;line-height:1.35}
+.meta small{color:var(--muted);display:block;margin-top:.15rem;font-weight:400}
+.meta a{margin-top:auto;align-self:flex-start;padding:.3rem .8rem;font-size:.85rem}
+.notice{margin-top:1.2rem;padding:.9rem 1.1rem;border:1.5px solid var(--green);border-radius:12px;font-size:.93rem;color:var(--muted)}
+
+/* guide albums */
+.guide{margin-bottom:1.6rem}
+.guide:last-child{margin-bottom:0}
+.guide h3{font:800 1.1rem var(--head);margin:0 0 .6rem;display:flex;gap:.6rem;align-items:center}
+.guide h3 i{font:700 .8rem var(--body);font-style:normal;background:var(--green);color:var(--on);border-radius:99px;padding:.1rem .7rem}
+.ctrl{display:flex;gap:.5rem;align-items:center;margin-bottom:.6rem}
+.ctrl button{width:42px;height:42px;border-radius:50%;border:0;background:var(--green);color:var(--on);font-size:1.4rem;cursor:pointer}
+.ctrl button:hover{background:var(--green-d)}
+.count{margin-left:auto;background:var(--green);color:var(--on);border-radius:99px;padding:.15rem .8rem;font-weight:700;font-size:.88rem}
+.track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 14px;scrollbar-color:var(--green) var(--line)}
+.track img{flex:0 0 min(84%,420px);scroll-snap-align:center;border-radius:12px;border:3px solid var(--surface);box-shadow:0 8px 20px rgba(0,0,0,.2);background:#fff}
+.pbar{height:5px;border-radius:99px;background:var(--line);overflow:hidden}
+.pbar i{display:block;height:100%;width:0;background:var(--green);transition:width .2s}
+
+.join{text-align:center;padding:2.5rem 1rem;margin:1.5rem 0;border-radius:16px;background:linear-gradient(150deg,#14532d,#2e7d32);color:#fff}
+.join h2{font:800 1.6rem var(--head);margin:0 0 1rem}
+.join .poster{max-width:620px;margin:0 auto 1.4rem}
+.cta{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;margin-bottom:1.4rem}
+.cta .btn{padding:.9rem 1.6rem;font-size:1.05rem}
+.btn.ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.8)}
+.btn.ghost:hover{background:rgba(255,255,255,.18)}
+footer{padding:1.5rem 0 2.5rem;color:var(--muted);font-size:.85rem;text-align:center}
+footer p{margin:.4rem 0}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="windriv.html">← Winners Driven Team</a>
+    <nav class="links" id="nav" aria-label="Albums"></nav>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <div class="hero-text">
+      <h1>Let’s invest in our growth and make the most of this opportunity. Together, we rise. 💪</h1>
+      <p>Open an album below, press “Click here” and learn at your own pace.</p>
+      <a class="btn lime" href="#onboarding">Start with Part 1</a>
+    </div>
+  </div>
+</div>
+
+<div class="wrap" style="margin-top:2rem">
+  <div id="albums"></div>
+
+  <div class="join">
+    <h2>Ready to be part of the team?</h2>
+    <div class="poster"><img src="https://winnersdriven.com/wp-content/uploads/2025/05/slide1-2.jpg?w=1024" alt="Join the team" loading="lazy"></div>
+    <div class="cta">
+      <a class="btn lime i" href="https://www.facebook.com/groups/teammjonline" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Click here</a>
+      <a class="btn ghost i" href="https://www.facebook.com/groups/teammjonline" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6M16 5.5a3 3 0 0 1 0 5M18 14c2 .7 3 2.5 3 5"/></svg>Join the Facebook group</a>
+    </div>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 <strong>Winners Driven Team</strong>. Independent Santé International partners; not owned or operated by Santé International.</p>
+    <p>Food supplements are not medicines and do not cure, treat or prevent any disease. Talk to your doctor about any health condition.</p>
+    <p>Stories shown are individual experiences. Results and income vary and are not guaranteed. Videos belong to their respective owners and play from YouTube.</p>
+  </div>
+</footer>
+
+<script>
+var IMG="https://winnersdriven.com/wp-content/uploads/";
+/* video = [title, YouTube id, subtitle (optional), start seconds (optional)] */
+var S=[
+{id:"onboarding",t:"Onboarding training",d:"Eleven parts on the company, products, system and mindset.",img:"2025/05/sbo.jpg?w=1024",v:[
+["Part 1: Why Santé Barley is the Best Barley Brand in the Market","RAhjPDafWAo","Santé CEO Joey Marcelo"],
+["Part 2: Learn from the Expert Mentor Jun Francisco","Q3w1owV9CCA","Santé Hall of Famer"],
+["Part 3: SUCCESS 101 from the Expert Mentor Jun Francisco","0AbQptv-ZhA","Santé Hall of Famer"],
+["Part 4: Santé Company","aggyvxAWLKg"],
+["Part 5: Santé Products","FZvAiAeRuYI"],
+["Part 6: Santé System","ipDSZfO72yA"],
+["Part 7: Why Santé Barley?","edAf5NEAVKY"],
+["Part 8: How to Overcome Your FEAR?","uNwYzZ_NlDI"],
+["Part 9: The ABCs to Success","XYfeLeC6OQY"],
+["Part 10: How to Start your Santé Business","RTA2PsAdj2c"],
+["Part 11: Back to Basics","N9PP6kuxUxY","Mr. George Caluag"]]},
+{id:"stories",t:"Member success stories",d:"Real members share where they started and how they grew. Results are not typical.",img:"2025/05/member-success-stories.jpg?w=1024",v:[
+["Former Office Staff become a Successful Entrepreneur","oq3I0mEH2Zo","Ms. Ederlyn Panopio"],
+["Aspiring Leader, CPA by Profession, now a Successful Entrepreneur","D-9TEDi5PJg","Mrs. Apple Chico-Gallineto"],
+["Former “Medrep” Medical Rep. become a Successful Entrepreneur","6MJsVhtvlVQ","Mr. Bryan Barabad"],
+["Former Waiter sa Hotel become a Successful Entrepreneur","wia2_ww2WA4","Mr. Mark Anthony Ferranco"],
+["Former Jollibee Service Crew become a Successful Entrepreneur","8E6LOO0RH90","Mr. Cris Gallineto"],
+["Former Supply Chain Officer become a Successful Entrepreneur","maRa7sP9QJ4","Ms. Tin Payawal"]]},
+{id:"business",t:"Business training",d:"Skills and mindset for building your own business.",img:"2025/05/special-training.jpg?w=870",v:[
+["Training Part 1: SUCCESS, Burdens to SUCCESS and ABC to SUCCESS","Ox7SB8IXFiE","Mentor Melchor Daugdaug"],
+["Training Part 2: 5 Basic Skills in MLM or Network Marketing Business","VKP1UPllSt8","Mentor Melchor Daugdaug",12],
+["What are the 5 Main Capital in our Business","1MJmQv7-d8g","Mentor Bryan Barabad"]]},
+{id:"ambassadors",t:"Brand ambassadors",d:"The faces and personalities behind the Santé Barley family.",img:"2025/05/sante-brand-ambassador.jpg?w=708",v:[
+["Kuya Kim for Santé Barley: Better Choice, Better Lives","4La0A2LHutM"],
+["The Unkabogable is here! Vice Ganda is officially part of the Santé Barley family","5UUP5d93MHc"],
+["Live For More with Santé Barley | Vic Sotto x Vice Ganda","olWBB1HULjM"],
+["Ang Bossing natin is finally part of the Santé Barley family!","iWjOe8D6ECQ"],
+["Cheers to 13 Amazing Years: Kuya Kim with Santé Barley","3YZ-SyuGxxs"],
+["Matteo Guidicelli for Santé Barley","YPZUgvBaKm8"],
+["BEHIND THE SCENES: Kuya Kim and Matteo Guidicelli for Santé","DqH8qAops_E"],
+["Lilipad na-as the newest face of Santé: Ms. Jane De Leon!","GtR37_Pfvd8"],
+["A New Day with Daily C: Confidence","986CZoXSntw"],
+["BTS: Catriona Gray for Daily C","i6nZzSTdz7U"],
+["Coach Rio de la Cruz is officially part of the Santé Barley family!","Phh9mS3WITQ"],
+["Santé x Lopez Family","EJaC9DazAOA"]]},
+{id:"products",t:"Santé products",d:"Meet the barley powders, coffees, vitamins and more.",img:"2025/05/sante-barley-products.jpg?w=860",note:1,v:[
+["Santé Daily C for Kuya Kim’s EXTRA Protection","tpr3txhOEm0"],
+["Introducing the Santé Barley Powder with Stevia packed in a 200 gram Canister","MVu-tIlvUS8"],
+["Santé NutriPair NOW AVAILABLE","kbvZey-aZWA"],
+["The New Santé Barley Powder, No Added Sweetener","GOhE7wsTNV8"],
+["Santé Barley Powder No Added Sweetener","8ouQwP5y4no"],
+["Santé Fusion Coffee","rzl1hge8KtM"],
+["Santé Choco Barley","psczUOEStUE"],
+["Santé Daily C 750mg","q20cs9pRNz8"],
+["Singaw stopping you? Fight back with Vitamin C!","b8QdWBUsZgs"],
+["Santé FitN’Trim","cZJdfJybCEk"],
+["The FITN’TRIMspiration: Kath Lagunsad","TF-xFYBtyug"],
+["Santé Fresh & Clean","Lq0If4tWN30"],
+["Moments Anion Sanitary Napkins and Pantyliners","uebscMJoEyo"]]},
+{id:"product-training",t:"Product training",d:"Learn how each product works and how to explain it.",img:"2025/05/sante-product-training.jpg?w=952",v:[
+["Santé Product Training","puKBfjw90Es","Mentor Jun Francisco"],
+["Santé Product Training","1b3uwo1aVAM","Ms. Bing Calinawan, Corporate Product Trainer and Specialist"],
+["Santé Product Training (From Grass to Glass)","rWq_kmSsajU","Coach Malou Malinao"],
+["What Is Santé Fusion Coffee?","Xfl1c1bKEK4"],
+["What Is Santé Boost Coffee?","5W4x9bePjOY"],
+["What is Santé Choco Barley?","5_0MvvKrtDE"]]},
+{id:"doctors",t:"Doctor talks",d:"Wellness talks from medical professionals.",img:"2025/05/doctor-training.jpg?w=1024",note:1,v:[
+["Learn from the DOCTOR: Live Blood Analysis with Santé Barley","U5pdq5X_sAc","Dr. Victor Escueta"],
+["How to Drink Barley Juice","mXbpjyrQGeA","Doc Ron Unidad"],
+["Santé Barley versus Cancer","pqBmrjvbO-Y","Doc Ron Unidad"],
+["Doctor’s Wellness Talk (Weight Loss and Barley)","CFWCHejzVyU","Dr. Mike Vergara"],
+["Doctor’s Wellness Training (Kidney Health & Barley)","MIKC7NIxTeU","Dr. Claro Cayanan M.D. FPCP"]]},
+{id:"guides",t:"Step-by-step guides",d:"Nine slide albums. Swipe each one to the left.",img:"2025/05/sst.jpg?w=862",g:[
+["Training guide 1","a:slide1-7"],
+["Training guide 2","b:slide2-3 b:slide3-2 b:slide4-1 b:slide5-2 b:slide6-2"],
+["Training guide 3","b:slide2-2 b:slide3-2 b:slide4-1 b:slide5-1 b:slide6-1"],
+["Training guide 4","b:slide2-5 b:slide3-1 b:slide4 b:slide5-3 b:slide6-3 b:slide7-1"],
+["Training guide 5","b:slide2-6 b:slide3-3 b:slide4-2 b:slide5-4 b:slide6-4 b:slide7-2"],
+["Training guide 6","b:slide2-1 b:slide3-1 b:slide4 b:slide5 b:slide6 b:slide7 b:slide8"],
+["Training guide 7","a:a-1 b:slide3-2 b:slide4-1"],
+["How to disburse","a:how-to-disburse-2 b:slide3-2 b:slide4-1"],
+["Step by step: transferring your Santé income to your bank account","a:step-by-step-transferring-your-sante-income-to-your-bank-account b:slide3-2 b:slide4-1"]]}
+];
+var NOTE="These products are not medicines and are not intended to diagnose, treat, cure, or prevent any disease. Talk to a doctor before changing your diet or treatment.";
+var IC={
+"onboarding":'<circle cx="12" cy="12" r="9"/><path d="m10 8 6 4-6 4z"/>',
+"stories":'<circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6M16 5.5a3 3 0 0 1 0 5M18 14c2 .7 3 2.5 3 5"/>',
+"business":'<path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/>',
+"ambassadors":'<path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/>',
+"products":'<path d="M5 19C5 9 11 4 20 4c0 9-5 15-15 15zM5 19l8-8"/>',
+"product-training":'<path d="M4 5h6a2 2 0 0 1 2 2v13a2 2 0 0 0-2-2H4zM20 5h-6a2 2 0 0 0-2 2v13a2 2 0 0 1 2-2h6z"/>',
+"doctors":'<path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/>',
+"guides":'<path d="M9 6h11M9 12h11M9 18h11"/><path d="m3.5 6 1.2 1.2L7 5M3.5 12l1.2 1.2L7 11M3.5 18l1.2 1.2L7 17"/>'
+};
+function svg(inner,cls){return '<svg class="ic '+(cls||"")+'" viewBox="0 0 24 24" aria-hidden="true">'+inner+'</svg>'}
+var P=[["#0f3d22","#2e7d32"],["#14532d","#6b9d2a"],["#134e4a","#2f9e6b"],["#3a5a12","#8c9a26"],["#14532d","#43a047"],["#1e4d2b","#558b2f"],["#0b3b2e","#26a269"],["#0f3d22","#4f9a3f"]];
+
+function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+function gurl(t){var p=t.split(":");return IMG+(p[0]==="a"?"2025/05/":"2026/07/")+p[1]+".jpg?w=1024"}
+var root=document.getElementById("albums"),nav=document.getElementById("nav"),updaters=[];
+
+function tile(v){
+  var d=el("article","tile"),shot=el("button","shot");shot.type="button";shot.setAttribute("aria-label","Play: "+v[0]);
+  var im=el("img");im.src="https://i.ytimg.com/vi/"+v[1]+"/hqdefault.jpg";im.alt="";im.loading="lazy";shot.appendChild(im);
+  var pl=el("span","play");pl.innerHTML=svg('<path d="M7 4.5v15l13-7.5z"/>');shot.appendChild(pl);
+  var m=el("div","meta"),b=el("b",null,v[0]);
+  if(v[2])b.appendChild(el("small",null,v[2]));
+  var yt=el("a","btn alt","Open on YouTube");yt.href="https://www.youtube.com/watch?v="+v[1]+(v[3]?"&t="+v[3]+"s":"");yt.target="_blank";yt.rel="noopener";
+  m.append(b,yt);
+  shot.onclick=function(){
+    var f=el("iframe");f.title=v[0];f.allowFullscreen=true;
+    f.allow="autoplay; encrypted-media; picture-in-picture; fullscreen";
+    f.src="https://www.youtube-nocookie.com/embed/"+v[1]+"?rel=0&modestbranding=1&color=white&autoplay=1"+(v[3]?"&start="+v[3]:"");
+    d.replaceChild(f,shot);
+  };
+  d.append(shot,m);return d;
+}
+function guide(g,gi){
+  var items=g[1].split(" "),n=items.length,box=el("div","guide"),h=el("h3");
+  h.append(el("i",null,gi+1),document.createTextNode(g[0]));
+  var ctrl=el("div","ctrl"),prev=el("button",null,"‹"),next=el("button",null,"›"),count=el("span","count","1 / "+n);
+  prev.type=next.type="button";prev.setAttribute("aria-label","Previous slide");next.setAttribute("aria-label","Next slide");
+  ctrl.append(prev,next,count);
+  var track=el("div","track");track.tabIndex=0;track.setAttribute("role","region");track.setAttribute("aria-label",g[0]);
+  items.forEach(function(t,i){var im=el("img");im.src=gurl(t);im.alt=g[0]+", slide "+(i+1)+" of "+n;im.loading="lazy";track.appendChild(im)});
+  var bar=el("div","pbar"),fill=el("i");bar.appendChild(fill);
+  prev.onclick=function(){track.scrollBy({left:-track.clientWidth*.8,behavior:"smooth"})};
+  next.onclick=function(){track.scrollBy({left:track.clientWidth*.8,behavior:"smooth"})};
+  function upd(){var max=track.scrollWidth-track.clientWidth,r=max>0?track.scrollLeft/max:0;count.textContent=(Math.round(r*(n-1))+1)+" / "+n;fill.style.width=(Math.max(r,1/n)*100)+"%"}
+  track.addEventListener("scroll",upd,{passive:true});updaters.push(upd);
+  box.append(h,ctrl,track,bar);return box;
+}
+function setOpen(sec,open){
+  var b=sec.querySelector(".head .btn"),p=sec.querySelector(".panel");
+  p.hidden=!open;b.setAttribute("aria-expanded",open);b.firstChild.textContent=open?"Close":"Click here";
+  if(open)updaters.forEach(function(u){u()});
+}
+
+S.forEach(function(s,i){
+  var a=el("a");a.innerHTML=svg(IC[s.id]);a.appendChild(document.createTextNode(s.t));a.href="#"+s.id;nav.appendChild(a);
+  var sec=el("section","album");sec.id=s.id;
+  var cov=el("div","cover");cov.style.setProperty("--c1",P[i%P.length][0]);cov.style.setProperty("--c2",P[i%P.length][1]);
+  var count=s.v?s.v.length+" videos":s.g.length+" slide albums";
+  var bd=el("div","badge");bd.innerHTML=svg(IC[s.id]);
+  var tx=el("div","txt");tx.append(el("span","tag",count),el("h2",null,s.t));
+  var bg=el("span");bg.innerHTML=svg(IC[s.id],"big");
+  cov.append(bg.firstChild,bd,tx);
+  var head=el("div","head"),info=el("div");info.append(el("p",null,s.d));
+  var btn=el("button","btn");btn.appendChild(document.createTextNode("Click here"));btn.insertAdjacentHTML("beforeend",svg('<path d="m6 9 6 6 6-6"/>'));btn.type="button";btn.setAttribute("aria-expanded","false");btn.setAttribute("aria-controls",s.id+"-panel");
+  head.append(info,btn);
+  var panel=el("div","panel");panel.id=s.id+"-panel";panel.hidden=true;
+  if(s.v){var g=el("div","tiles");s.v.forEach(function(v){g.appendChild(tile(v))});panel.appendChild(g)}
+  else s.g.forEach(function(g,gi){panel.appendChild(guide(g,gi))});
+  if(s.note)panel.appendChild(el("p","notice",NOTE));
+  sec.append(cov,head,panel);root.appendChild(sec);
+  btn.addEventListener("click",function(){setOpen(sec,panel.hidden)});
+});
+function fromHash(){var e=document.getElementById(location.hash.slice(1));if(e&&e.classList.contains("album"))setOpen(e,true)}
+window.addEventListener("hashchange",fromHash);fromHash();
+</script>
+</body>
+</html>

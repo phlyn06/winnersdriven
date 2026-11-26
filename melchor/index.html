@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#14532d">
+<title>Winners Driven Team | Santé Barley and Santé partner training</title>
+<meta name="description" content="Winners Driven Team helps new Santé International partners learn direct selling with free training, mentoring, and clear information on products and earnings.">
+<link rel="icon" href="https://winnersdriven.com/wp-content/uploads/2025/05/cropped-s-sante-logo.jpg?w=64">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Nunito+Sans:wght@400;600;700&display=swap">
+<style>
+:root{
+ color-scheme:light dark;
+ --bg:#f5f8ee;--surface:#fff;--tint:#e9f2d9;--line:#d6e2c3;--text:#16301c;--muted:#4e6552;--headc:#14532d;
+ --green:#2e7d32;--green-d:#1b5e20;--deep:#14532d;--fresh:#4f9a3f;--lime:#a6d35f;--grain:#d9b54a;--on:#fff;--note:#fffbe9;
+ --head:"Fraunces",Georgia,serif;--body:"Nunito Sans","Segoe UI",system-ui,sans-serif;
+ --shadow:0 10px 28px rgba(20,83,45,.18);
+ box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media(prefers-color-scheme:dark){:root{--bg:#0c1a10;--surface:#12241a;--tint:#0f2015;--line:#23402d;--text:#e8f1df;--muted:#9db5a1;--headc:#e8f1df;--green:#6abf69;--green-d:#4caf50;--on:#0c1a10;--note:#1f2a14;--shadow:0 10px 28px rgba(0,0,0,.45)}}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1.02rem/1.6 var(--body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--deep);z-index:30}
+h1,h2,h3{font-family:var(--head);line-height:1.15;margin:0 0 .6em;color:var(--headc)}
+h2{font-size:clamp(1.5rem,4.6vw,2.2rem);font-weight:800;letter-spacing:-.01em}
+h2::before{content:"🌾";display:block;font-size:1.5rem;margin-bottom:6px}
+p{margin:0 0 1em}
+a{color:var(--green)}
+img{max-width:100%;height:auto;display:block}
+:focus-visible{outline:3px solid var(--lime);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1000px,100% - 2rem);margin-inline:auto}
+section{padding:54px 0}
+section.tint{background:var(--tint)}
+section.dark{background:linear-gradient(150deg,#14532d,#2e7d32 70%,#4f9a3f);color:#e3f0d6}
+section.dark h2{color:#fff}
+section.dark p{color:#e3f0d6}
+
+.btn{display:inline-block;font:700 1rem var(--body);background:var(--green);color:var(--on);border:0;border-radius:10px;padding:.8rem 1.5rem;min-height:46px;text-decoration:none;cursor:pointer;transition:background .2s,transform .15s}
+.btn:hover{background:var(--green-d);transform:translateY(-2px)}
+.btn.gold{background:var(--lime);color:#14391a}
+.btn.gold:hover{background:#b9e07a}
+
+nav.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--deep);color:#fff;padding:.6rem 1rem;display:flex;gap:.4rem;align-items:center;overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+nav.top::-webkit-scrollbar{display:none}
+nav.top a{color:#fff;text-decoration:none;font-size:.9rem;font-weight:600;padding:.35rem .85rem;border-radius:99px;background:rgba(255,255,255,.12)}
+nav.top a:hover{background:rgba(255,255,255,.25)}
+nav.top .btn{margin-left:auto;padding:.4rem 1rem;min-height:38px;background:var(--lime);color:#14391a;border-radius:99px}
+
+.hero{background:linear-gradient(150deg,#14532d,#2e7d32 70%,#4f9a3f);padding:2.5rem 0 4.5rem;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:36px;background:var(--bg);clip-path:ellipse(60% 100% at 50% 100%)}
+.frame{position:relative;border-radius:16px;border:4px solid rgba(255,255,255,.85);box-shadow:0 14px 34px rgba(0,0,0,.3);overflow:hidden;background:#fff}
+.frame img{width:100%}
+.hero .frame{margin:0 auto 18px;max-width:760px}
+
+.founder{display:grid;gap:26px;align-items:center}
+.founder .frame{border-radius:50% 50% 16px 16px / 30% 30% 16px 16px;border-color:var(--lime)}
+.badge{display:inline-block;background:var(--lime);color:#14391a;font-weight:700;border-radius:99px;padding:.15rem .9rem;font-size:.9rem;margin-bottom:10px}
+
+.two{display:grid;gap:22px}
+.card{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--green);border-radius:16px;padding:22px 24px;box-shadow:var(--shadow)}
+.card h2{font-size:1.4rem}
+.card h2::before{display:none}
+ul.ticks{list-style:none;padding:0;margin:0}
+ul.ticks li{padding-left:30px;position:relative;margin-bottom:.6em}
+ul.ticks li::before{content:"";position:absolute;left:0;top:.45em;width:16px;height:16px;border-radius:50%;background:var(--green);box-shadow:inset 0 0 0 4px var(--surface),0 0 0 2px var(--green)}
+.logo{max-width:200px;margin:0 auto 28px;filter:drop-shadow(0 6px 10px rgba(20,83,45,.25))}
+
+.carousel{margin-bottom:8px}
+.ctrl{display:flex;gap:10px;align-items:center;margin:0 0 14px}
+.ctrl button{width:42px;height:42px;border-radius:50%;border:0;background:var(--green);color:var(--on);font-size:1.4rem;cursor:pointer}
+.ctrl button:hover{background:var(--green-d)}
+.count{margin-left:auto;background:var(--green);color:var(--on);border-radius:99px;padding:.15rem .8rem;font-weight:700;font-size:.9rem}
+.track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 4px 18px;-webkit-overflow-scrolling:touch;scrollbar-color:var(--green) var(--line)}
+.track img{flex:0 0 min(86%,500px);scroll-snap-align:center;border-radius:14px;border:3px solid var(--surface);box-shadow:0 8px 22px rgba(0,0,0,.2);background:#fff}
+.bar{height:5px;border-radius:99px;background:var(--line);overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--green);transition:width .2s}
+
+.videos{display:grid;gap:22px}
+.video{aspect-ratio:16/9;width:100%;border:4px solid rgba(255,255,255,.85);border-radius:14px;background:#000;box-shadow:0 10px 28px rgba(0,0,0,.35)}
+.videos p{margin:10px 0 0;font-weight:700}
+
+.notice{background:var(--note);border:2px solid var(--grain);border-radius:14px;padding:20px 22px;margin-top:20px}
+.notice p{margin:0}
+.cta{display:flex;flex-wrap:wrap;gap:18px;justify-content:center}
+.cta-btn{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:240px;padding:20px 34px;border-radius:14px;text-decoration:none;text-align:center;box-shadow:0 10px 24px rgba(0,0,0,.3);transition:transform .15s}
+.cta-btn:hover{transform:translateY(-3px) scale(1.02)}
+.cta-btn span{font:800 1.3rem var(--head)}
+.cta-btn small{font-size:.95rem;opacity:.85}
+.cta-btn.main{background:var(--lime);color:#14391a}
+.cta-btn.alt{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.85)}
+.cta-btn.alt:hover{background:rgba(255,255,255,.18)}
+footer{background:var(--deep);color:#cfe3c0;padding:40px 0 60px;font-size:.95rem}
+footer p{max-width:80ch}
+footer strong{color:#fff}
+
+@media(min-width:760px){.founder{grid-template-columns:1fr 1.3fr}.two{grid-template-columns:1fr 1fr}.videos{grid-template-columns:1fr 1fr}.track img{flex-basis:420px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.cta-btn,.bar i{transition:none}}
+</style>
+</head>
+<body>
+<nav class="top" aria-label="Page sections">
+<a href="#about">About</a><a href="#overview">Company</a><a href="#products">Products</a><a href="#videos">Videos</a><a href="#results">Results</a><a href="#earn">Earn</a>
+<a class="btn" href="training.html">Free training</a>
+</nav>
+
+<main>
+<div class="hero">
+<div class="wrap">
+<h1 style="position:absolute;left:-9999px">Winners Driven Team: your No. 1 healthy solution</h1>
+<div class="frame gold"><img src="https://winnersdriven.com/wp-content/uploads/2025/05/welcome-to-our-team-poster-flyer-template-made-with-postermywall.jpg?w=1024" alt="Welcome to the Winners Driven Team" fetchpriority="high"></div>
+<div class="frame"><img src="https://winnersdriven.com/wp-content/uploads/2025/05/hundred-of-thousands-of-members-nationwide.jpg?w=1024" alt="Hundreds of thousands of members nationwide"></div>
+<p style="text-align:center;margin:22px 0 0"><a class="btn gold" href="training.html">Start free training</a></p>
+</div>
+</div>
+
+<section id="about"><div class="wrap">
+<div class="founder">
+<div class="frame"><img src="https://winnersdriven.com/wp-content/uploads/2025/05/melchor-phoebe.jpg?w=993" alt="Melchor and Phoebe Daugdaug" loading="lazy"></div>
+<div>
+<span class="badge">Founders of Winners Driven Team</span>
+<h2 style="margin-top:6px">Melchor and Phoebe Daugdaug</h2>
+<p><strong>From merchandiser to Santé Top 1 Elite.</strong></p>
+<p>Melchor started as a struggling merchandiser and reports reaching Santé International’s Top 1 Elite rank in 2025. The team’s training is built on what they learned along the way.</p>
+</div>
+</div>
+</div></section>
+
+<section class="tint"><div class="wrap">
+<img class="logo" src="https://winnersdriven.com/wp-content/uploads/2025/05/new-winners-logo2023-with-s-logo-final.png?w=1024" alt="Winners Driven Team logo">
+<div class="two">
+<div class="card">
+<h2>Why join the Winners Driven Team?</h2>
+<ul class="ticks">
+<li><strong>Step-by-step system:</strong> a roadmap for building your business.</li>
+<li><strong>Mentorship and training:</strong> learn from experienced leaders.</li>
+<li><strong>Income programs:</strong> direct sales, team commissions, and bonuses.</li>
+<li><strong>Team support:</strong> a community that helps each other.</li>
+<li><strong>Digital tools:</strong> ready-made marketing posts and guides.</li>
+</ul>
+</div>
+<div class="card">
+<h2>What you get when you join</h2>
+<ul class="ticks">
+<li>Free training on direct selling and network marketing</li>
+<li>A system you can follow and repeat</li>
+<li>Support from top-performing leaders</li>
+<li>Personal coaching and team mentoring</li>
+<li>Guidance on how to start earning</li>
+</ul>
+</div>
+</div>
+</div></section>
+
+<section id="overview"><div class="wrap">
+<h2>Company overview</h2>
+<div class="carousel" data-set="overview" data-label="Company overview"></div>
+</div></section>
+
+<section id="products" class="tint"><div class="wrap">
+<h2>Santé Barley products</h2>
+<div class="carousel" data-set="products" data-label="Santé Barley products"></div>
+<p><em>These products are not medicines and are not intended to diagnose, treat, cure, or prevent any disease. Talk to a doctor before changing your diet or treatment.</em></p>
+</div></section>
+
+<section id="videos" class="dark"><div class="wrap">
+<h2>Watch and learn</h2>
+<div class="videos" id="videoList"></div>
+</div></section>
+
+<section id="testimonials"><div class="wrap">
+<h2>Real people, real testimonials</h2>
+<div class="carousel" data-set="testimonials" data-label="Testimonials"></div>
+</div></section>
+
+<section id="partner" class="tint"><div class="wrap">
+<h2>How to become a Santé partner today</h2>
+<p>Your first step to health, income, and entrepreneurship.</p>
+<div class="carousel" data-set="partner" data-label="Becoming a partner"></div>
+</div></section>
+
+<section id="earn"><div class="wrap">
+<h2>How to earn with Santé EDGE: 10 ways to earn</h2>
+<div class="carousel" data-set="earn" data-label="Ways to earn"></div>
+<div class="notice">
+<p><strong>Before you join, ask for these in writing:</strong> the company’s income disclosure statement, your total start-up and monthly costs, the refund policy, and the full compensation plan. Many people in direct selling earn little or nothing.</p>
+</div>
+</div></section>
+
+<section id="results" class="tint"><div class="wrap">
+<h2>Individuals who achieved results through the Santé partnership program</h2>
+<div class="carousel" data-set="results" data-label="Partner results"></div>
+<p><small>Featured results are individual results, not typical results.</small></p>
+</div></section>
+
+<section id="story"><div class="wrap">
+<h2>My Santé success story: Michael John Licayan</h2>
+<div class="carousel" data-set="story" data-label="Michael John Licayan story"></div>
+</div></section>
+
+<section class="dark"><div class="wrap">
+<div class="cta">
+<a class="cta-btn main" href="training.html"><span>Start your training</span><small>Free for new partners</small></a>
+<a class="cta-btn alt" href="training.html"><span>Click here to join</span><small>Watch the free training</small></a>
+</div>
+<p style="text-align:center;margin:24px 0 0">Questions first? Contact the team at <strong>[add your email or Messenger link]</strong>.</p>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<p>© 2026 <strong>Winners Driven Team</strong>. All rights reserved. Independent Santé International partners; not owned or operated by Santé International. Add your registered business name and location here.</p>
+<p>Income and health statements: results vary, are not guaranteed, and depend on individual effort. Product information does not replace medical advice.</p>
+</div></footer>
+
+<script>
+/* ===== EDIT ME: YouTube videos. Replace each id with the part after v= in the YouTube link. ===== */
+var VIDEOS=[
+ {id:"jNQXAC9IVRw",title:"Company introduction (placeholder video)"},
+ {id:"jNQXAC9IVRw",title:"Santé Barley product talk (placeholder video)"}
+];
+
+/* Slide sets. "a:" = uploads/2025/05, "b:" = uploads/2026/07. .jpg is added when no extension is given. */
+var BASE="https://winnersdriven.com/wp-content/uploads/";
+var SETS={
+overview:"a:slide2-1 a:slide3-1 a:slide1-3 a:slide6-4 a:slide6-1 a:slide6a a:slide20 a:slide19 a:slide7-1 a:slide8 a:slide10-1",
+products:"a:slide17-1 a:200-edited a:slide11-1 a:slide12 a:slide32-1 a:slide13 a:slide14 a:slide15 a:slide16 a:slide17-3 a:slide18-3 a:slide18-1 a:slide27 a:slide28-1 a:slide29 a:slide30 a:slide31",
+testimonials:"a:6412dfac4d97b2684ce2cbc8.png a:6412e20c4d97b296a2e2cc85.png a:3aaaaaa a:3aaaaaaaa a:3aaaaaaaaaaaaa a:3aaaaa a:3aaaaaaaaa a:3aaaaaaaaaaa a:4aa a:3aaaa a:3aaaaaaa a:9aaa",
+partner:"a:slide2-5 a:slide3-6 a:slide4-4 a:slide5-4 a:slide6-5 a:slide7-4 a:slide8-3 a:slide9-3 a:slide10-2 a:slide11-2",
+earn:"a:slide12-3 a:slide54-1 a:slide55-1 a:slide56-2 a:slide14-3 a:slide15-2 b:slide59 a:slide16-3 a:slide17-5 a:slide18-5 a:slide19-2 a:slide20-3 a:slide21-2 a:slide28-3 b:slide68 b:slide69 a:slide24-1 a:slide25 a:slide26-1 a:slide27-2 b:slide72 b:slide73 b:slide74 b:slide75 b:slide76 b:slide77 b:slide78 b:slide79 b:slide80 b:slide81 b:slide82 b:slide83 b:slide84 b:slide85 b:slide86 b:slide88 b:slide89 b:slide90-1 a:slide40-1 b:slide91 b:slide92 b:slide93 b:slide94 b:slide95",
+results:"a:slide57 a:slide58 a:slide1-4 a:slide2-3 a:slide3-4 a:slide3-3 a:slide14-1 a:slide6-2 a:slide8-1 a:slide9-1 a:slide7-2 a:slide52 a:slide53 a:slide10 a:slide14-2 a:slide12-1 a:slide13-1 a:slide18-2 a:slide15-1 a:slide16-1 a:slide17-2 a:slide54 a:slide56 a:slide55 a:slide56-1 a:slide26 a:slide27-1 a:slide58-1",
+story:"b:slide3 b:slide2 a:slide65 a:slide66 a:slide2-2 a:slide69 a:slide3-2 a:slide4-1 a:slide71-1 a:slide72 a:slide73 a:slide74 a:slide75 a:slide77-1 a:slide78-1 a:slide79-1 a:slide80 a:slide81 a:slide83 a:slide84 a:slide77 a:slide23"
+};
+function url(t){var p=t.split(":"),f=p[1];if(f.indexOf(".")<0)f+=".jpg";return BASE+(p[0]==="a"?"2025/05/":"2026/07/")+f+"?w=1024"}
+document.querySelectorAll(".carousel").forEach(function(c){
+ var items=SETS[c.dataset.set].split(" "),label=c.dataset.label,n=items.length;
+ var ctrl=document.createElement("div");ctrl.className="ctrl";
+ var prev=document.createElement("button");prev.type="button";prev.textContent="‹";prev.setAttribute("aria-label","Previous slide");
+ var next=document.createElement("button");next.type="button";next.textContent="›";next.setAttribute("aria-label","Next slide");
+ var count=document.createElement("span");count.className="count";count.textContent="1 / "+n;
+ ctrl.append(prev,next,count);
+ var track=document.createElement("div");track.className="track";track.tabIndex=0;track.setAttribute("role","region");track.setAttribute("aria-label",label);
+ items.forEach(function(t,i){var im=document.createElement("img");im.src=url(t);im.alt=label+", slide "+(i+1)+" of "+n;im.loading="lazy";track.appendChild(im)});
+ var bar=document.createElement("div");bar.className="bar";var fill=document.createElement("i");bar.appendChild(fill);
+ prev.onclick=function(){track.scrollBy({left:-track.clientWidth*.8,behavior:"smooth"})};
+ next.onclick=function(){track.scrollBy({left:track.clientWidth*.8,behavior:"smooth"})};
+ function upd(){
+  var max=track.scrollWidth-track.clientWidth,r=max>0?track.scrollLeft/max:0;
+  count.textContent=(Math.round(r*(n-1))+1)+" / "+n;fill.style.width=(Math.max(r,1/n)*100)+"%";
+ }
+ track.addEventListener("scroll",upd,{passive:true});upd();
+ c.append(ctrl,track,bar);
+});
+var vl=document.getElementById("videoList");
+VIDEOS.forEach(function(v){
+ var d=document.createElement("div");
+ var f=document.createElement("iframe");
+ f.className="video";f.loading="lazy";f.title=v.title;
+ f.src="https://www.youtube-nocookie.com/embed/"+v.id;
+ f.allow="accelerometer; encrypted-media; gyroscope; picture-in-picture";f.allowFullscreen=true;
+ var p=document.createElement("p");p.textContent=v.title;
+ d.append(f,p);vl.appendChild(d);
+});
+</script>
+</body>
+</html>
